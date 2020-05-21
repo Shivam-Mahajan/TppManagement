@@ -126,7 +126,7 @@ app.controller('loginControl',function($scope,$location,user, $http){
         {
             choi=1;
         }
-        var newurl="https://tpomanagementsystem.herokuapp.com/tpo/getlogin/"+$scope.loguname+"/"+$scope.logpassword+"/"+choi;
+        var newurl="https://tpp-management.herokuapp.com/tpo/getlogin/"+$scope.loguname+"/"+$scope.logpassword+"/"+choi;
         console.log(newurl);
 
         $http.get(newurl).then(
@@ -212,7 +212,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
 
     $scope.getIds=function(ecode)
     {
-        var url="https://tpomanagementsystem.herokuapp.com/tpo/getreg/"+ecode.toString();
+        var url="https://tpp-management.herokuapp.com/tpo/getreg/"+ecode.toString();
         console.log(url);
         $http.get(url).then(
             function(response){
@@ -226,14 +226,14 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
     $scope.delete2=function(ecode)
     {
         console.log(ecode);
-        var url="https://tpomanagementsystem.herokuapp.com/tpo/deletelogin/"+ecode.toString();
+        var url="https://tpp-management.herokuapp.com/tpo/deletelogin/"+ecode.toString();
         console.log(url);
         $http.get(url).then(
             function(response){
             $scope.datax=response.data;
             });
             
-        var url="https://tpomanagementsystem.herokuapp.com/tpo/deletestudent/"+ecode.toString();
+        var url="https://tpp-management.herokuapp.com/tpo/deletestudent/"+ecode.toString();
         console.log(url);
         $http.get(url).then(
             function(response){
@@ -251,7 +251,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
         else
         {
         $scope.extra=true;
-        $http.get("https://tpomanagementsystem.herokuapp.com/tpo/getallstudent")
+        $http.get("https://tpp-management.herokuapp.com/tpo/getallstudent")
         .then(function(response) {
             console.log(response.data);
                 $scope.studdata=response.data;
@@ -395,7 +395,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
         console.log(localStorage.getItem('loggedin'))
         console.log(localStorage.getItem('username'))
         
-        $http.get("https://tpomanagementsystem.herokuapp.com/tpo/getallplacement").then(
+        $http.get("https://tpp-management.herokuapp.com/tpo/getallplacement").then(
         function(response){
         $scope.data=response.data;
         console.log("data")
@@ -403,13 +403,13 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
         });
 
         
-        $http.get("https://tpomanagementsystem.herokuapp.com/tpo/getalllogin").then(
+        $http.get("https://tpp-management.herokuapp.com/tpo/getalllogin").then(
         function(response){
         $scope.data3=response.data;
         console.log($scope.data3);
         });
     
-        $http.get("https://tpomanagementsystem.herokuapp.com/tpo/getallstudent")
+        $http.get("https://tpp-management.herokuapp.com/tpo/getallstudent")
         .then(function(response) {
             console.log(response.data);
                 $scope.studdata=response.data;
@@ -473,7 +473,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
         $scope.delete=function(sId){
     
             console.log(sId);
-            var newUrl="https://tpomanagementsystem.herokuapp.com/tpo/deleteplacement/"+sId.toString();
+            var newUrl="https://tpp-management.herokuapp.com/tpo/deleteplacement/"+sId.toString();
             console.log(newUrl);
             $http.get(newUrl).then(
                 function(response){
@@ -486,7 +486,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
             $scope.editinit=function(sId){
     
                 console.log(sId);
-                var newUrl="https://tpomanagementsystem.herokuapp.com/tpo/getplacement/"+sId.toString();
+                var newUrl="https://tpp-management.herokuapp.com/tpo/getplacement/"+sId.toString();
                 console.log(newUrl);
                 $http.get(newUrl).then(
                     function(response2){
@@ -514,7 +514,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
     $scope.editinit2=function(sId){
     
                     console.log(sId);
-                    var newUrl="https://tpomanagementsystem.herokuapp.com/tpo/getstudent/"+sId.toString();
+                    var newUrl="https://tpp-management.herokuapp.com/tpo/getstudent/"+sId.toString();
                     console.log(newUrl);
                     console.log($scope.stud);
                     $http.get(newUrl).then(
@@ -556,7 +556,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
     $scope.update=function(){
         
  
-        var newUrl="https://tpomanagementsystem.herokuapp.com/tpo/updateplacement/";
+        var newUrl="https://tpp-management.herokuapp.com/tpo/updateplacement/";
         
         newUrl+=$scope.id.toString();
         newUrl+="/"+$scope.name.toString();
@@ -588,7 +588,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
     $scope.update2=function(){
         
  
-        var newUrl2="https://tpomanagementsystem.herokuapp.com/tpo/updatestudent";
+        var newUrl2="https://tpp-management.herokuapp.com/tpo/updatestudent";
         newUrl2+="/"+$scope.name.toString();
         newUrl2+="/"+$scope.name2.toString();
         newUrl2+="/"+$scope.branch.toString();
@@ -616,7 +616,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
         $location.path("/");
     }
     $scope.insert=function(){
-        var newUrl="https://tpomanagementsystem.herokuapp.com/tpo/insertplacement/";
+        var newUrl="https://tpp-management.herokuapp.com/tpo/insertplacement/";
         
         newUrl+=$scope.id.toString();
         newUrl+="/"+$scope.name.toString();
@@ -648,7 +648,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
     $scope.submitregister=function()
     {
         
-        var newUrl="https://tpomanagementsystem.herokuapp.com/tpo/insertlogin/";
+        var newUrl="https://tpp-management.herokuapp.com/tpo/insertlogin/";
         
         newUrl+=$scope.name.toString();
         newUrl+="/"+$scope.cpass.toString();
@@ -669,7 +669,7 @@ app.controller('testControl',function($scope,$location,user,$http,$interval){
         if(choi==1)
         {
 
-        var newUrl2="https://tpomanagementsystem.herokuapp.com/tpo/insertstudent";
+        var newUrl2="https://tpp-management.herokuapp.com/tpo/insertstudent";
         newUrl2+="/"+$scope.name.toString();
         newUrl2+="/"+$scope.name2.toString();
         newUrl2+="/"+$scope.branch.toString();
@@ -794,7 +794,7 @@ app.controller('userControl',function($scope,$location,user,$http,$interval){
         console.log(localStorage.getItem('loggedin'))
         console.log(localStorage.getItem('username'))
         
-        $http.get("https://tpomanagementsystem.herokuapp.com/tpo/getupcommingplacement").then(
+        $http.get("https://tpp-management.herokuapp.com/tpo/getupcommingplacement").then(
         function(response){
         $scope.data=response.data;
         console.log("data")
@@ -814,13 +814,13 @@ app.controller('userControl',function($scope,$location,user,$http,$interval){
     }
     $scope.reg=function(ecode)
     {
-        $http.get("https://tpomanagementsystem.herokuapp.com/tpo/getregs/"+ecode.toString()+"/"+$scope.loggedinas.toString()).then(
+        $http.get("https://tpp-management.herokuapp.com/tpo/getregs/"+ecode.toString()+"/"+$scope.loggedinas.toString()).then(
             function(response){
                 console.log(response)
             if(response.data.length==0)
             {
-                console.log("https://tpomanagementsystem.herokuapp.com/tpo/insertreg/"+ecode.toString()+"/"+$scope.loggedinas.toString());
-                $http.get("https://tpomanagementsystem.herokuapp.com/tpo/insertreg/"+ecode.toString()+"/"+$scope.loggedinas.toString()).then(
+                console.log("https://tpp-management.herokuapp.com/tpo/insertreg/"+ecode.toString()+"/"+$scope.loggedinas.toString());
+                $http.get("https://tpp-management.herokuapp.com/tpo/insertreg/"+ecode.toString()+"/"+$scope.loggedinas.toString()).then(
             function(response2){
                 console.log(response2)
             });
@@ -832,7 +832,7 @@ app.controller('userControl',function($scope,$location,user,$http,$interval){
 
     $scope.fetchd=function()
     {
-        $http.get("https://tpomanagementsystem.herokuapp.com/tpo/getrek/"+$scope.loggedinas.toString()).then(
+        $http.get("https://tpp-management.herokuapp.com/tpo/getrek/"+$scope.loggedinas.toString()).then(
             function(response2){
                 $scope.fetchdata=response2.data;
                 $scope.count=$scope.fetchdata.length;
@@ -841,9 +841,9 @@ app.controller('userControl',function($scope,$location,user,$http,$interval){
 
     $scope.delreg=function(ecode)
     {
-        $http.get("https://tpomanagementsystem.herokuapp.com/tpo/deletereg/"+ecode.toString()+"/"+$scope.loggedinas.toString()).then(
+        $http.get("https://tpp-management.herokuapp.com/tpo/deletereg/"+ecode.toString()+"/"+$scope.loggedinas.toString()).then(
             function(response){
-                $http.get("https://tpomanagementsystem.herokuapp.com/tpo/getrek/"+$scope.loggedinas.toString()).then(
+                $http.get("https://tpp-management.herokuapp.com/tpo/getrek/"+$scope.loggedinas.toString()).then(
                     function(response2){
                         $scope.fetchdata=response2.data;
                         $scope.count=$scope.fetchdata.length;
