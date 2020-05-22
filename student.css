@@ -1,0 +1,178 @@
+
+  .page-footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+    .heading{
+        background-color: #0073b1;
+        color: azure;
+        margin-bottom: 0px !important;
+    }
+
+    .heading2{
+        background-color: #000000;
+        color: azure;
+        height: 4em;
+    }
+
+    .fa-trash 
+    {
+        color: azure;
+    }
+    .fa-edit
+    {
+        color: azure;
+    }
+    .form-inline
+    {
+        align-content: center;
+    }
+    .btn-outline-primary:hover 
+    {
+        background-color: #0073b1;
+    }
+
+    
+    .btn-primary:hover 
+    {
+        background-color: #0073b1;
+    }
+    
+    .btn-primary
+    {
+        color: #0073b1;
+        background-color:azure;
+    }
+
+    body.modal-open .background-container{
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+    .modal-title{
+        align-content: center;
+    }
+    #myModalLabel{
+        align-content: center;
+    }
+    .modal-header{
+        align-content: center;
+    }
+    /* #typelist
+    {
+      width:auto;
+      align-content: center;
+    } */
+    .menu
+    {
+      width: 100%;
+      overflow: auto
+    }
+
+    .menu div
+    { 
+      float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+
+    }
+    .menudata
+    {
+      height: 100%;
+    }
+
+    .menu a
+    {
+      height:100%;
+    }
+    .form-inline
+    {
+      width: 100%;
+    }
+    .menudata a
+    {
+      text-decoration: none;
+      color: white;
+      width:100%;
+      height:100%;
+    }
+    .menudata2
+    {
+      background-color: 005391;
+      width:100%;
+      height:100%;
+    }
+    .menudata a:hover
+    {
+      color: 0073b1;
+    }
+
+    .menudata:hover
+    {
+      color: 0073b1;
+      background-color: white;
+    }
+    .active
+    {
+      background-color: 0073b1;
+      color: white;
+    }
+
+
+    .input2 .form-control
+    {
+      width:18.5% !important;
+      height:30% !important;
+    } 
+
+    .input2 .btn-lg
+    {
+      width: 5.3% !important;
+      height: 30% !important;
+    }
+    .xyz1
+{
+    background-color: fafafa !important;
+    border:none;
+    width:30% !important;
+    text-align: center;
+}
+
+.modal-dialog2
+{ 
+  width:auto;
+  margin:auto;
+}
+
+ 
+
+/* .input2 .form-control
+{
+  width:16.43%;
+} */
+.input2
+{
+  width: 100%;
+  height: 100%;
+}
+
+.heading h1,h5
+{
+  
+  display: inline;
+}
+.heading h5
+{
+  margin-left:0%;
+}
+

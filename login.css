@@ -1,0 +1,121 @@
+
+    .heading{
+        background-color: #0073b1;
+        color: azure;
+    }
+    .fa-trash 
+    {
+        color: azure;
+    }
+    .fa-edit
+    {
+        color: azure;
+    }
+    .form-inline
+    {
+        align-content: center;
+    }
+    .btn-outline-primary:hover 
+    {
+        background-color: #0073b1;
+    }
+
+    
+    .btn-primary:hover 
+    {
+        background-color: #0073b1;
+    }
+    
+    .btn-primary
+    {
+        color: #0073b1;
+        background-color:azure;
+    }
+
+    body.modal-open .background-container{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+
+    .modal-title{
+        align-content: center;
+    }
+    #myModalLabel{
+        align-content: center;
+    }
+    .modal-header{
+        align-content: center;
+    }
+    .form-control 
+    {
+
+        margin-top: 20px;
+    }
+    .btn-default
+    {
+        margin-top: 20px;
+    }
+
+    .logincontainer
+    {
+        width: 40%;
+        margin-left: 30%;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+        border-radius: 2em;
+        background-color: fafafa;
+
+    }
+
+    
+.input1 
+{
+  width:100%;
+  margin-top: 25%;
+  padding-top: 10%;
+}
+
+.form-control
+{
+    width:80%;
+    margin-left: 10%;
+}
+.one
+{
+    width:40%;
+    margin-top: 10%;
+    margin-left: 30%;
+    
+}
+.two
+{
+    width:40%;
+    margin-top: 10%;
+
+}
+
+.loginhead
+{
+    color: 0073b1;
+    text-align: center;
+}
+
+.xyz1
+{
+    background-color: fafafa !important;
+    border:none;
+    width:50% !important;
+    text-align: center;
+}
+.errmsg
+{
+    color: red;
+    text-align: center !important;
+    /* margin-left: 50% !important; */
+}
+.h6
+{
+    margin-left: 20% !important;
+}
